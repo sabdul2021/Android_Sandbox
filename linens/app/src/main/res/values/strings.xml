@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">linens</string>
+    <string-array name="house">
+        <item>Neville</item>
+        <item>ShadySide</item>
+        <item>University Place</item>
+    </string-array>
+</resources>
