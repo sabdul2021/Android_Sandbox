@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3639705d-87e5-4cc6-892d-b5cad50d47f8" name="Default Changelist" comment="" />
+    <list default="true" id="3639705d-87e5-4cc6-892d-b5cad50d47f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/home_familyhouse" beforeDir="false" afterPath="$PROJECT_DIR$/home_familyhouse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_familyhouse/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/home_familyhouse/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +26,10 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -38,49 +40,30 @@
             <path>
               <item name="Android_Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="Android_Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android_Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="Android_Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="codeStyles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android_Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android_Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="FamilyHouse_android2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android_Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android_Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="FamilyHouse_android2" type="462c0819:PsiDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android_Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android_Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="FamilyHouse_android2" type="462c0819:PsiDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="5.4.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android_Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Android_Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="FamilyHouse_android2" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Android_Sandbox" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Android_Sandbox" type="e9137016:NonAndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FamilyHouse_android2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home_familyhouse" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
@@ -110,7 +93,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33489934" />
