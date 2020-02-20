@@ -1,2 +1,33 @@
 # Android_Sandbox
 This is a sandbox that will be used during the semester, while we learn to program for Android
+
+### ExpandableLists_Android
+- This is an example project on how to create source code for drop down menus for Android Programming
+- Create a Title, and then have it drop down with answers
+
+### ANDROID_API2
+- This application code is used to demostrate on how to make an API call from Android Studion using Java programming
+
+## Libraries
+1. [Volley](https://android.googlesource.com/platform/frameworks/volley)Volley is a library that makes networking for Android apps easier and most importantly, faster.
+
+## Programming Concepts for Android API
+**Single API call with a single item of data being returned** -  For sharing elements between activities 
+```
+JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
+                "https://jsonplaceholder.typicode.com/todos/1", null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.d("JSON:", "onResponse: " + response);
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Error", "onErrorResponse: " + error.getMessage());
+
+            }
+        });
+
+        requestQueue.add(jsonObjectRequest);
+```
