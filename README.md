@@ -14,7 +14,7 @@ This is a sandbox that will be used during the semester, while we learn to progr
 ## Programming Concepts for Android API
 **Gradle Add** -  build.gradle(Module: app)
 ```
-~compile~ 'com.android.volley:volley:1.1.1'
+~compile~ 'com.android.volley:volley:1.1.1' <-- This is Deprecated. Use the "implementation" below
 implementation 'com.android.volley:volley:1.1.1'
 
 ReSync your app after adding the add on
