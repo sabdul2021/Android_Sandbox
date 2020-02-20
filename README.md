@@ -31,3 +31,53 @@ JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
 
         requestQueue.add(jsonObjectRequest);
 ```
+** API with multiple values and a single call with data being returned** -  
+```
+JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
+                "https://jsonplaceholder.typicode.com/todos", null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        Log.d("JSON:", "onResponse: " + response);
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Error", "onErrorResponse: " + error.getMessage());
+
+            }
+        });
+
+        requestQueue.add(jsonArrayRequest);
+```
+** API with multiple values and multipel data criteria being pulled, based on id, title and completed** -  
+```
+JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
+                "https://jsonplaceholder.typicode.com/todos", (JSONArray) null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+
+
+                for (int i = 0; i < response.length(); i++) {
+                    try {
+                        JSONObject jsonObject = response.getJSONObject(i);
+                        Log.d("JSonArray", "onResponse: "
+                                + jsonObject.getString("id") +
+                                " "+jsonObject.getString("title"));
+                        boolean d = jsonObject.getBoolean("completed");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(jsonArrayRequest);
+```
