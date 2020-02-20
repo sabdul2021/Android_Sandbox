@@ -14,7 +14,9 @@ This is a sandbox that will be used during the semester, while we learn to progr
 ## Programming Concepts for Android API
 **Gradle Add** -  build.gradle(Module: app)
 ```
-compile 'com.android.volley:volley:1.1.1'
+<strike>compile</strike> 'com.android.volley:volley:1.1.1'
+[implementation 'com.android.volley:volley:1.1.1'](https://developer.android.com/studio/build/dependencies?utm_source=android-studio#dependency_configurations)
+
 ReSync your app after adding the add on
 ```
 ## Programming Concepts for Android API
