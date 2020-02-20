@@ -12,6 +12,11 @@ This is a sandbox that will be used during the semester, while we learn to progr
 1. [Volley](https://android.googlesource.com/platform/frameworks/volley)Volley is a library that makes networking for Android apps easier and most importantly, faster.
 
 ## Programming Concepts for Android API
+**Gradle Add** -  build.gradle(Module: app)
+```
+compile 'com.android.volley:volley:1.1.1'
+```
+## Programming Concepts for Android API
 **Single API call with a single item of data being returned** -  For sharing elements between activities 
 ```
 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
