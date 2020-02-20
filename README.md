@@ -9,13 +9,21 @@ This is a sandbox that will be used during the semester, while we learn to progr
 - This application code is used to demostrate on how to make an API call from Android Studion using Java programming
 
 ## Libraries
-1. [Volley](https://android.googlesource.com/platform/frameworks/volley)Volley is a library that makes networking for Android apps easier and most importantly, faster.
+1. [Volley](https://android.googlesource.com/platform/frameworks/volley) is a library that makes networking for Android apps easier and most importantly, faster.
 
 ## Programming Concepts for Android API
 **Gradle Add** -  build.gradle(Module: app)
 ```
 compile 'com.android.volley:volley:1.1.1'
+ReSync your app after adding the add on
 ```
+## Programming Concepts for Android API
+**AndroidManifest - Internet Permissions** -  b
+```
+    <uses-permission android:name="android.permission.INTERNET" />
+
+```
+
 ## Programming Concepts for Android API
 **Single API call with a single item of data being returned** -  For sharing elements between activities 
 ```
