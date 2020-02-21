@@ -1,35 +1,38 @@
-# Android_Sandbox
-This is a sandbox that will be used during the semester, while we learn to program for Android
+package com.familyhouse.androidapi2;
 
-### ExpandableLists_Android
-- This is an example project on how to create source code for drop down menus for Android Programming
-- Create a Title, and then have it drop down with answers
+import androidx.appcompat.app.AppCompatActivity;
 
-### ANDROID_API2
-- This application code is used to demostrate on how to make an API call from Android Studion using Java programming
+import android.os.Bundle;
+import android.util.Log;
 
-## Libraries
-1. [Volley](https://android.googlesource.com/platform/frameworks/volley) is a library that makes networking for Android apps easier and most importantly, faster.
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
-## Programming Concepts for Android API
-**Gradle Add** -  build.gradle(Module: app)
-```
-~compile~ 'com.android.volley:volley:1.1.1' <-- This is Deprecated. Use the "implementation" below
-implementation 'com.android.volley:volley:1.1.1'
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-ReSync your app after adding the add on
-```
-## Programming Concepts for Android API
-**AndroidManifest - Internet Permissions** -  b
-```
-    <uses-permission android:name="android.permission.INTERNET" />
+public class MainActivity extends AppCompatActivity {
 
-```
+    private RequestQueue requestQueue;
 
-## Programming Concepts for Android API
-**Single API call with a single item of data being returned** -  For sharing elements between activities 
-```
-JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //invoke the new request queue
+        requestQueue = Volley.newRequestQueue(this);
+
+
+        //This is a single value of calling an API //
+
+        /*
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                 "https://jsonplaceholder.typicode.com/todos/1", null,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -45,10 +48,12 @@ JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
         });
 
         requestQueue.add(jsonObjectRequest);
-```
-** API with multiple values and a single call with data being returned** -  
-```
-JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
+    }
+         */
+
+        //This is how you call an API with multiple values //
+        /*
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
                 "https://jsonplaceholder.typicode.com/todos", null,
                 new Response.Listener<JSONArray>() {
                     @Override
@@ -64,10 +69,11 @@ JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
         });
 
         requestQueue.add(jsonArrayRequest);
-```
-** API with multiple values and multipel data criteria being pulled, based on id, title and completed** -  
-```
-JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
+    }
+
+         */
+    //This way is another JSONArrayRequest
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
                 "https://jsonplaceholder.typicode.com/todos", (JSONArray) null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -95,4 +101,6 @@ JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
             }
         });
         requestQueue.add(jsonArrayRequest);
-```
+        //queue.add(jsonArrayRequest);
+    }
+}
