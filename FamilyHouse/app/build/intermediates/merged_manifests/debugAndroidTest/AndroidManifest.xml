@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.familyhouse.test" >
+    package="com.example.family_house.test" >
 
     <uses-sdk
         android:minSdkVersion="22"
@@ -10,8 +10,8 @@
         android:name="androidx.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.example.familyhouse"
-        android:targetPackage="com.example.familyhouse" />
+        android:label="Tests for com.example.family_house"
+        android:targetPackage="com.example.family_house" />
 
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 
@@ -20,21 +20,21 @@
 
         <activity
             android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-            android:theme="@style/InstrumentationActivityInvokerBootstrapActivityTheme" >
+            android:theme="@android:style/Theme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
             android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-            android:theme="@style/InstrumentationActivityInvokerEmptyActivityTheme" >
+            android:theme="@android:style/Theme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
             android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-            android:theme="@style/InstrumentationActivityInvokerFloatingActivityTheme" >
+            android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

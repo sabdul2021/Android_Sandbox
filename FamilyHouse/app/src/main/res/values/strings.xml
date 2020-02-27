@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="linens">Linen Request</string>
+    <string name="alerts">Alerts</string>
+    <string name="events">Events Calender</string>
+    <string name="faq">FAQ</string>
+</resources>
