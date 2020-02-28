@@ -96,6 +96,6 @@ JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
         });
         requestQueue.add(jsonArrayRequest);
 ```
-### ANDROID NOTIFICATIONS
-# Android Notifications provides a list of broken down sections that will guide you through how to create a local connection, create a token, Save Items to web service/Fire Cloud Messaging DB
+# ANDROID NOTIFICATIONS
+### Android Notifications provides a list of broken down sections that will guide you through how to create a local connection, create a token, Save Items to web service/Fire Cloud Messaging DB
 
