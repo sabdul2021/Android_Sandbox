@@ -98,7 +98,7 @@ JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
 ```
 # ANDROID NOTIFICATIONS
 Android Notifications provides a list of broken down sections that will guide you through how to create a local connection, create a token, Save Items to web service/Fire Cloud Messaging DB
-![Android Notifications - Intro ](https://youtu.be/5NUa_vvEEaU)
-![Android Notifications - Create Token ](https://youtu.be/vWPM49pn9Tk)
-![Android Notifications - Save Items ](https://youtu.be/oX671RJhMrQ)
+![Android Notifications - Intro ](https://github.com/pointparkuniversity/Android_Sandbox/blob/master/AndroidNotifications.png)
+![Android Notifications - Create Token ](https://github.com/pointparkuniversity/Android_Sandbox/blob/master/NotificationsCreateToken.png)
+![Android Notifications - Save Items ](https://github.com/pointparkuniversity/Android_Sandbox/blob/master/NotificationsSavingItems.png)
 
