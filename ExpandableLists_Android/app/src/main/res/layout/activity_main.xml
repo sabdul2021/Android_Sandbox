@@ -11,7 +11,7 @@
         android:layout_width="408dp"
         android:layout_height="80dp"
         android:background="#FFFFFF"
-        android:text="@string/general"
+        android:text="general           >"
         android:textColor="#DDCD69"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

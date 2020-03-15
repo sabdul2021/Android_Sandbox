@@ -91,8 +91,8 @@ public class ExpandableListDataPump {
 //        great.add("Family House accepts Cash, Check, Mastercard, Visa and Discover Card. \n");
 
         expandableListDetail.put("What is Family House?", cricket);
-        expandableListDetail.put("Where is Family House Located?", football);
-        expandableListDetail.put("How is Family House funded?", basketball);
+        expandableListDetail.put("Where is Family House Located?", basketball);
+        expandableListDetail.put("How is Family House funded?", football);
 //        expandableListDetail.put("Who is eligible to stay at Family House?", soccer);
 //        expandableListDetail.put("Do I need a caregiver?", hockey);
 //        expandableListDetail.put("How long can we stay at Family House?", ice);
