@@ -1,12 +1,12 @@
 package com.familyhouse.myapplication;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toolbar;
-import android.widget.TextView;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setupToolbar();
 
         Button button2 = findViewById(R.id.button);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -24,20 +23,13 @@ public class MainActivity extends AppCompatActivity {
                 openActivity2();
             }
         });
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_layout);
     }
 
     public void openActivity2() {
         Intent intent = new Intent(this, Activity2.class);
         startActivity(intent);
-    }
-
-    private void setupToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView mTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
-
-        setSupportActionBar(toolbar);
-        mTitle.setText(toolbar.getTitle());
-
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 }
