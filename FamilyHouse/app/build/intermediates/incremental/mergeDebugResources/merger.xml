@@ -2684,12 +2684,16 @@
         <item>Neville</item>
         <item>ShadySide</item>
         <item>University Place</item>
-    </string-array><string name="dropdown1">Select Your House</string></file><file path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </string-array><string name="dropdown1">Select Your House</string><string name="upcoming_events">Upcoming Events!</string><string name="settings">Settings</string><string name="settingstext2">Select houses to be notified of their events.</string><string name="settingstext1">Turn on notifications?</string><string-array name="places2">
+        <item>Neville</item>
+        <item>ShadySide</item>
+        <item>University Place</item>
+    </string-array></file><file path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style></file></source><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\build\generated\res\rs\debug"/><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="settings_main" path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\main\res\layout\settings_main.xml" qualifiers="" type="layout"/></source><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\build\generated\res\rs\debug"/><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\rilou\Desktop\android sandbox\FamilyHouse\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>
