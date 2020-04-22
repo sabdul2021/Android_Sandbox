@@ -13,7 +13,7 @@ This is a sandbox that will be used during the semester, while we learn to progr
 
 ## Programming Concepts for Android API
 **Gradle Add** -  build.gradle(Module: app)
-```
+```gradle
 ~compile~ 'com.android.volley:volley:1.1.1' <-- This is Deprecated. Use the "implementation" below
 implementation 'com.android.volley:volley:1.1.1'
 
@@ -21,14 +21,14 @@ ReSync your app after adding the add on
 ```
 ## Programming Concepts for Android API
 **AndroidManifest - Internet Permissions** -  b
-```
+```xml
     <uses-permission android:name="android.permission.INTERNET" />
 
 ```
 
 ## Programming Concepts for Android API
 **Single API call with a single item of data being returned** -  For sharing elements between activities 
-```
+```java
 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                 "https://jsonplaceholder.typicode.com/todos/1", null,
                 new Response.Listener<JSONObject>() {
@@ -47,7 +47,7 @@ JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
         requestQueue.add(jsonObjectRequest);
 ```
 ** API with multiple values and a single call with data being returned** -  
-```
+```java
 JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
                 "https://jsonplaceholder.typicode.com/todos", null,
                 new Response.Listener<JSONArray>() {
@@ -66,7 +66,7 @@ JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
         requestQueue.add(jsonArrayRequest);
 ```
 ** API with multiple values and multipel data criteria being pulled, based on id, title and completed** -  
-```
+```java
 JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
                 "https://jsonplaceholder.typicode.com/todos", (JSONArray) null, new Response.Listener<JSONArray>() {
             @Override
